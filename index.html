@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Our Memory Lane ❤️</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========================================= -->
+    <!-- MAP SELECTOR SCREEN -->
+    <!-- ========================================= -->
+    <div id="selector-screen">
+        <h1>Our Memory Lane</h1>
+        <p class="subtitle">Choose a city to explore our <span>memories</span> ❤️</p>
+        
+        <div class="map-grid">
+            <div class="map-card" data-city="calamba">
+                <span class="emoji">🏙️</span>
+                <span class="city-name">Calamba</span>
+                <span class="memory-count">2 memories</span>
+                <span class="pin-count">❤️</span>
+            </div>
+            
+            <div class="map-card" data-city="bay">
+                <span class="emoji">🌊</span>
+                <span class="city-name">Bay</span>
+                <span class="memory-count">7 memories</span>
+                <span class="pin-count">❤️</span>
+            </div>
+
+            <!-- Future cities
+            <div class="map-card disabled">
+                <span class="emoji">🔒</span>
+                <span class="city-name">Coming Soon</span>
+                <span class="memory-count">More cities...</span>
+                <span class="coming-soon">✨</span>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- MAP SCREEN -->
+    <!-- ========================================= -->
+    <div id="map-screen">
+        <div id="map"></div>
+        
+        <button class="back-btn" id="backBtn">
+            <span class="arrow">←</span> Back to Cities
+        </button>
+        
+        <div class="title-overlay" id="mapTitle">
+            <h2><span id="cityNameDisplay">Calamba</span> Memories</h2>
+        </div>
+        
+        <div class="floating-heart">❤️</div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- PHOTO LIGHTBOX (Supports Images & Videos) -->
+    <!-- ========================================= -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation();">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">‹</button>
+            
+            <!-- Container for images OR videos -->
+            <div id="lightbox-media-container"></div>
+            
+            <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">›</button>
+            <div class="lightbox-counter" id="lightbox-counter">1 / 1</div>
+        </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- SCRIPTS -->
+    <!-- ========================================= -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
