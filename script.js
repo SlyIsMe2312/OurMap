@@ -1,7 +1,6 @@
 // ============================================================
 // 1. CITY DATA - With Photos and Custom Radius
 // ============================================================
-const S3_BASE_URL = 'http://ourmap-393323650896-ap-southeast-1-an.s3-website.ap-southeast-1.amazonaws.com';
 
 
 const CITY_DATA = {
@@ -21,16 +20,16 @@ const CITY_DATA = {
                 description: "Dito ako unang naka punta bago sa Bay sa iyo at dito tayo nag meet 2nd time around <33",
                 date: "June 6, 2026",
                 media: [
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/1.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/2.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/3.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/4.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/5.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/6.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/7.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/8.jpg` },
-                    { type: 'video', url: `${S3_BASE_URL}/memories/june6/9.mp4`, thumbnail: `${S3_BASE_URL}/memories/june6/9-thumb.png`  },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/10.jpg`}
+                    { type: 'image', url: `/memories/june6/1.jpg` },
+                    { type: 'image', url: `/memories/june6/2.jpg` },
+                    { type: 'image', url: `/memories/june6/3.jpg` },
+                    { type: 'image', url: `/memories/june6/4.jpg` },
+                    { type: 'image', url: `/memories/june6/5.jpg` },
+                    { type: 'image', url: `/memories/june6/6.jpg` },
+                    { type: 'image', url: `/memories/june6/7.jpg` },
+                    { type: 'image', url: `/memories/june6/8.jpg` },
+                    { type: 'video', url: `/memories/june6/9.mp4`, thumbnail: `/memories/june6/9-thumb.png`  },
+                    { type: 'image', url: `/memories/june6/10.jpg`}
                 ]
             },
             {
@@ -60,11 +59,11 @@ const CITY_DATA = {
                 description: "Dito ka currentlyyy <33 plus here kita naihatid nung naisip ko na i hahatid mo pa ako pabalik sa highway eh ikaw na iyong malapit no'n sa staffhouse moo",
                 date: "Since February 2026 / May 30, 2026",
                 media: [
-                    { type: 'image', url: `${S3_BASE_URL}/memories/may30/1.PNG` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/may30/2.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/may30/3.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/may30/4.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/may30/5.jpg` }
+                    { type: 'image', url: `/memories/may30/1.PNG` },
+                    { type: 'image', url: `/memories/may30/2.jpg` },
+                    { type: 'image', url: `/memories/may30/3.jpg` },
+                    { type: 'image', url: `/memories/may30/4.jpg` },
+                    { type: 'image', url: `/memories/may30/5.jpg` }
                 ]
             },
             {
@@ -89,7 +88,7 @@ const CITY_DATA = {
                 description: "Nilibre kita ng salted caramel rito pero mas malasa ang kape kaya hindi mo rin masyado nagustuhan ang init rin though kahit may aircon sila HAHAHHAHA, eto iyong sunod na pinuntahan natin after sa Jabee nung unang punta ko 🙆💙🫶",
                 date: "May 30, 2026",
                 media: [
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june6/11.jpg` }
+                    { type: 'image', url: `/memories/june6/11.jpg` }
                 ]
             },
             {
@@ -106,26 +105,26 @@ const CITY_DATA = {
                 description: "Great Cafe hangout and date for us",
                 date: "June 19, 2026",
                 media: [
-                    { type: 'video', url: `${S3_BASE_URL}/memories/june19/1.mp4`, thumbnail: `${S3_BASE_URL}/memories/june19/1-thumb.png` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/2.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/3.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/4.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/5.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/6.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/7.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/8.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/9.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/10.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/11.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/12.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/13.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/14.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/15.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/16.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/17.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/18.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/19.jpg` },
-                    { type: 'image', url: `${S3_BASE_URL}/memories/june19/20.jpg` }
+                    { type: 'video', url: `/memories/june19/1.mp4`, thumbnail: `/memories/june19/1-thumb.png` },
+                    { type: 'image', url: `/memories/june19/2.jpg` },
+                    { type: 'image', url: `/memories/june19/3.jpg` },
+                    { type: 'image', url: `/memories/june19/4.jpg` },
+                    { type: 'image', url: `/memories/june19/5.jpg` },
+                    { type: 'image', url: `/memories/june19/6.jpg` },
+                    { type: 'image', url: `/memories/june19/7.jpg` },
+                    { type: 'image', url: `/memories/june19/8.jpg` },
+                    { type: 'image', url: `/memories/june19/9.jpg` },
+                    { type: 'image', url: `/memories/june19/10.jpg` },
+                    { type: 'image', url: `/memories/june19/11.jpg` },
+                    { type: 'image', url: `/memories/june19/12.jpg` },
+                    { type: 'image', url: `/memories/june19/13.jpg` },
+                    { type: 'image', url: `/memories/june19/14.jpg` },
+                    { type: 'image', url: `/memories/june19/15.jpg` },
+                    { type: 'image', url: `/memories/june19/16.jpg` },
+                    { type: 'image', url: `/memories/june19/17.jpg` },
+                    { type: 'image', url: `/memories/june19/18.jpg` },
+                    { type: 'image', url: `/memories/june19/19.jpg` },
+                    { type: 'image', url: `/memories/june19/20.jpg` }
                 ]
             },
             {
